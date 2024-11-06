@@ -12,13 +12,10 @@ while type(n) != int: #обработка исключений
     print('Неправильно ввели!')
     n = input('Введите первое число: ') #пусть пользователь введёт число заново
 
-def sum_squares(a):
-  total_sum = 0
-  a = n
-  while a <= 2 * n:
-      total_sum += a ** 2
-      a += 1
-  return total_sum
-total_sum = sum_squares(n)
+total_sum = 0
+a = n
+while a <= 2 * n:
+  total_sum += a ** 2
+  a += 1
 
 print (f'Сумма квадратов от {n} до {2 * n}: {total_sum}')
