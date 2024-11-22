@@ -8,6 +8,7 @@ def min_max(x, y):
         x , y = y, x #меняю порядок значений если x > y
     return x, y
 
+
 #ввод переменных
 a = input('Введи число A: ')
 while type(a) != float: #обработка исключений
