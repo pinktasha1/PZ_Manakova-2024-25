@@ -9,27 +9,27 @@ def min_max(x, y): #x - минимальное значение, y - макси�
     return x, y
 
 
-def exception(var, message): #обработка исключений
+def exception(var): #обработка исключений
   while type(var) != float:
     try:
       var = float(var)
     except ValueError:
       print('Неправильно ввели!')
-      var = input(message)
+      var = input('Введи число заново: ')
   return var
 
 
 a = input('Введи число a: ')
-a = exception(a, "Введи число заново")
+a = exception(a)
 
 b = input('Введи число b: ')
-b = exception(b, "Введи число заново")
+b = exception(b)
 
 c = input('Введи число b: ')
-c = exception(c, "Введи число заново")
+c = exception(c)
 
-d = input('Введи число b: ')
-d = exception(d, "Введи число заново")
+d = input('Введи число d: ')
+d = exception(d)
 
 #нахожу пары минимальных и максимальных значений
 min_ab, max_ab = min_max(a, b)
