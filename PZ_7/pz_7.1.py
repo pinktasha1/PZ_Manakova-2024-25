@@ -4,6 +4,5 @@ def reverse(a):
 
 
 string = (input('Введите строку: '))
-
 new_list = reverse(string)
 print(new_list)
