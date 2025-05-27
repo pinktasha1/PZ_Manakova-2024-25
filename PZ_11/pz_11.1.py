@@ -1,0 +1,45 @@
+#1. Средствами языка Python сформировать текстовый файл (.txt),
+# содержащий последовательность из целых положительных и отрицательных чисел.
+# Сформировать новый текстовый файл (.txt) следующего вида, предварительно выполнив требуемую обработку элементов:
+# Исходные данные:
+# Количество элементов:
+# Элементы в обратном порядке:
+# Сумма элементов последней половины:
+
+#file = open('aaaa.txt')
+
+#file.write()
+#count_elem = len(file)
+#reverse_elem = file[::-1]
+
+
+
+with open("ex11.txt", "w", encoding="utf-8") as f:
+    f.write("-3, 7, 12, -1, 5, -10, 15, 2, -8, 14, -5, 18, -4, 9, -12, 8")
+
+with open("ex11.txt", "r", encoding="utf-8") as f:
+    line = f.read().strip()
+
+num = []
+for i in line.split(','): #разбиваю строку по запятым
+    num.append(int(i.strip()))
+
+count = len(num)
+reversed_num = num[::-1]
+second_sum = sum(num[count // 2:])
+
+
+new_ex11 = f"""
+Исходные данные: {num}
+Количество элементов: {count}
+Элементы в обратном порядке: {reversed_num}
+Сумма элементов последней половины: {second_sum}"""
+
+with open("new_ex11.txt", "w", encoding="utf-8") as f:
+    f.write(new_ex11)
+
+print(new_ex11)
+
+#len(ex11.txt)
+#[::-1]
+#sum(len\2 [-:-1])
