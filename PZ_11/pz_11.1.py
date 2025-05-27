@@ -6,14 +6,6 @@
 # Элементы в обратном порядке:
 # Сумма элементов последней половины:
 
-#file = open('aaaa.txt')
-
-#file.write()
-#count_elem = len(file)
-#reverse_elem = file[::-1]
-
-
-
 with open("ex11.txt", "w", encoding="utf-8") as f:
     f.write("-3, 7, 12, -1, 5, -10, 15, 2, -8, 14, -5, 18, -4, 9, -12, 8")
 
@@ -39,7 +31,3 @@ with open("new_ex11.txt", "w", encoding="utf-8") as f:
     f.write(new_ex11)
 
 print(new_ex11)
-
-#len(ex11.txt)
-#[::-1]
-#sum(len\2 [-:-1])
