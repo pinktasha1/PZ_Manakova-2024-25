@@ -14,7 +14,7 @@ with open("ex11.txt", "r", encoding="utf-8") as f:
 
 num = []
 for i in line.split(','): #разбиваю строку по запятым
-    num.append(int(i.strip()))
+    num.append(int(i))
 
 count = len(num)
 reversed_num = num[::-1]
