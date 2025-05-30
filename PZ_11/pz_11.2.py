@@ -10,7 +10,6 @@ uppercase_count = sum(1 for char in poem if char.isupper())
 print(f"""Содержимое файла:\n{poem}\n
 Количество букв в верхнем регистре: {uppercase_count}""")
 
-
 autor = 'Михаил Юрьевич Лермонтов'
 title = 'Бородино'
 
