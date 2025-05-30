@@ -31,3 +31,4 @@ with open("new_ex11.txt", "w", encoding="utf-8") as f:
     f.write(new_ex11)
 
 print(new_ex11)
+f.close()

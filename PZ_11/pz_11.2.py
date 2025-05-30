@@ -18,3 +18,5 @@ new_text = poem.strip() + f"\n\nАвтор: {autor}\nПроизведение: {
 
 with open("new_text18-10.txt", "w", encoding="utf-8") as f:
     f.write(new_text)
+
+f.close()
