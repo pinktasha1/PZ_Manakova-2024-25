@@ -15,8 +15,7 @@ new_matrix = [random.randint(-20,20) for i in range(n)]
 
 print('\nодномерный массив: ',new_matrix)
 
-matrix[2].clear()
-matrix[2].extend(new_matrix)
+matrix[2] = new_matrix
 
 print('\nновый массив:')
 for i in matrix:
