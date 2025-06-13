@@ -2,12 +2,12 @@
 #метод, который выводит информацию о здании в формате "Адрес: адрес, Количество
 #этажей: этажи".
 
-class Zdani:
+class Zdanie:
     def __init__(self, address, num_floors):
         self.address = address
         self.num_floors = num_floors
     def print_address(self):
         print(f'Адрес: {self.address}, количество этажей: {self.num_floors}')
 
-a = zdanie('Королёва 12/3', 3)
+a = Zdanie('Королёва 12/3', 3)
 a.print_address()
