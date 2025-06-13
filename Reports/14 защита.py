@@ -14,7 +14,9 @@ def file_exists(filename):
 def is_ipv4(ip):
     parts = ip.split('.')
     if len(parts) != 4 or not all(part.isdigit() and 0 <= int(part) < 256 for part in parts):
-        print('Некорректный IP-адрес')
+        return False
+    else:
+        return True
 
 
 with open('ips.txt', 'r') as f:
